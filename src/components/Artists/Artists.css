@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 70%;
+  height: 50%;
   width: 100%;
-  border: salmon 2px solid;
+  border: olive 2px solid;
   overflow: auto;
 }

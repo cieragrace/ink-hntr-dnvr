@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom'
 
 const ArtistCard = (props) => {
   return(
-    <div className='artist-card'>
-      <h3>{props.name}</h3>
-    </div>
+    <NavLink to={`/artists/${props.id}`} className='artist-card'>
+      <img className='card-img' src={props.img[1]}></img>
+    </NavLink>
   )
 }
 

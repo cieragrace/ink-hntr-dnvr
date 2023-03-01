@@ -1,7 +1,7 @@
 .artist-card {
-  border: 2px solid black;
+  border: 2px solid olive;
   width: 30%;
-  height: 25%;
+  height: 70%;
   margin: 20px;
   text-align: center;
 }
