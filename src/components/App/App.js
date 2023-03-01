@@ -20,7 +20,9 @@ class App extends Component {
 
   render() {
     return(
-      <Artists artists={this.state.artists}/>
+      <div className='app-container'>
+       <Artists artists={this.state.artists}/>
+      </div>
     )
   }
 }

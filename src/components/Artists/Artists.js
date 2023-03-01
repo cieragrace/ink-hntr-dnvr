@@ -17,7 +17,7 @@ const Artists = (props) => {
   )
 })
   return(
-    <div>
+    <div className='artists-container'>
       {artistCards}
     </div>
   )
