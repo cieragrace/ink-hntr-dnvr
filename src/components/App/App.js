@@ -33,12 +33,13 @@ class App extends Component {
     })
   }
 
-  filterArtists = (inputValue) => {
+  filterArtists = (inputValue1, inputValue2, inputValue3) => {
     const filteredArtists = this.state.artists.filter(artist => {
-      if (inputValue) {
+      if (inputValue1 || inputValue2 || inputValue3) {
         return (
-          artist.keywords.toLowerCase().includes(inputValue) ||
-          artist.keywords.toUpperCase().includes(inputValue)
+          artist.keywords.includes(inputValue1) ||
+          artist.keywords.includes(inputValue2) ||
+          artist.keywords.includes(inputValue3)
         )
       } else {
         return artist

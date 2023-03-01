@@ -31,6 +31,7 @@
   width: 30%;
   height: 30%;
   text-align: center;
+  border: 2px navy solid;
 }
 
 .form-btn-container {
@@ -43,4 +44,8 @@
 .form-btn {
   height: 50%;
   width: 30%;
+  background-color: #FAB9D3;
+  border: 2px solid olive;
+  border-radius: 25%;
+
 }

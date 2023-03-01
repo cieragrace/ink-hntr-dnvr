@@ -33,9 +33,9 @@ class ArtistInfo extends Component {
     return(
       <div className='artist-info-container'>
         <div className='artist-images'>
-          <img className='image'>{img}</img>
-          {/* <img>{img[1]}</img>
-          <img>{img[2]}</img> */}
+          <img className='image'>{img[0]}</img>
+          <img>{img[1]}</img>
+          <img>{img[2]}</img>
         </div>
         <div className='artist-details'>
           <div>

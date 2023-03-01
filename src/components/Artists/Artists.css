@@ -6,4 +6,8 @@
   width: 100%;
   border: olive 2px solid;
   overflow: auto;
+  background-image: url('/src/assets/images/backgroundImages/h-background1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 10px;
 }
