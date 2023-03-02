@@ -5,6 +5,7 @@ import Form from '../Form/Form'
 
 const Artists = (props) => {
   const artistCards = props.artists.map(artist => {
+    console.log(artist.id)
   return(
     <ArtistCard 
       id={artist.id}

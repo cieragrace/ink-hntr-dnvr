@@ -12,7 +12,8 @@ class App extends Component {
     super ()
     this.state = {
       artists: [],
-      singleArtist: null
+      singleArtist: {},
+      favorites: []
     }
   }
 
@@ -21,6 +22,7 @@ class App extends Component {
     .then((data) => this.setState({ artists: data.artists }))
     .catch((error) => console.log(error))
   }
+
 
   showSingleArtist = (id) => {
     const findArtist = this.state.artists.find(artist => artist.id === id)
@@ -47,6 +49,13 @@ class App extends Component {
     })
     this.setState({ artists: filteredArtists})
   }
+
+  addFavorite = (id) => {
+    const artist = this.state.artists.find(artist => artist.id === id)
+    if (artist && !this.state.favorites.includes(artist)) {
+      this.setState({ favorites: [...this.state.favorites, artist] });
+    }
+  };
 
   render() {
     return(

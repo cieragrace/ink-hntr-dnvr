@@ -6,22 +6,13 @@ class ArtistInfo extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      singleArtist: null
+      singleArtist: {}
     }
   }
 
-  // componentDidMount = () => {
-  //   getArtistAPICalls(`artists/${this.props.id}`)
-  //   .then(data => {
-  //     this.setState({
-  //       singleArtist: data.artist
-  //     })
-  //   })
-  // }
-
   componentDidMount () {
     getArtistAPICalls(`artists/${this.props.artistid}`)
-      .then(data => {
+      .then((data) => {
         this.setState({
         singleArtist: data.artist   
         })
@@ -33,17 +24,17 @@ class ArtistInfo extends Component {
     return(
       <div className='artist-info-container'>
         <div className='artist-images'>
-          <img className='image'>{img[0]}</img>
-          <img>{img[1]}</img>
-          <img>{img[2]}</img>
+          <img className='image' src={img[0]}></img>
+          <img src={img[1]}></img>
+          <img src={img[2]}></img>
         </div>
         <div className='artist-details'>
-          <div>
-            <h1 className='artist-name'>{name}</h1>
-          </div>
-          <h3 className='shop-name'>{shop}</h3>
-          <p className='phone'>{phone}</p>
-          <p className='insta-handle'>{instagram}</p>
+          <h1 className='artist-name'>{name}</h1>
+          <ul>
+            <h3 className='shop-name'>{shop}</h3>
+            <p className='phone'>{phone}</p>
+            <p className='insta-handle'>{instagram}</p>
+          </ul>
         <div>
           <div></div>
           <div></div>
