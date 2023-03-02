@@ -1,11 +1,10 @@
 import './Artists.css'
 import React from 'react'
 import ArtistCard from '../ArtistCard/ArtistCard'
-import Form from '../Form/Form'
+import { Link } from 'react-router-dom'
 
 const Artists = (props) => {
   const artistCards = props.artists.map(artist => {
-    console.log(artist.id)
   return(
     <ArtistCard 
       id={artist.id}
@@ -19,9 +18,15 @@ const Artists = (props) => {
   )
 })
   return(
+    <div>
+      <div className='link-container'>
+        <Link to='/'>Back To Home</Link>
+        <Link to='/favorites'>See Favorites</Link>
+      </div>
       <div className='artists-container'>
        {artistCards}
       </div>
+    </div>
   )
 }
 

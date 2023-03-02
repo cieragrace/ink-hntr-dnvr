@@ -1,6 +1,7 @@
 import './Form.css'
 import React, { Component } from 'react'
 import Select from 'react-select'
+import { MultiSelect } from "react-multi-select-component"
 
 const options = [
   {value: 'watercolor abstract', label: 'water color abstract'},
@@ -8,7 +9,7 @@ const options = [
   {value: 'color realism', label: 'color realism'},
   {value: 'large scale', label: 'large scale'},
   {value: 'american traditional', label: 'american traditional'},
-  {value: 'blackwork', label: 'blackwork'},
+  {value: 'black work', label: 'blackwork'},
   {value: 'nature inspired', label: 'nature inspired'},
   {value: 'celtic', label: 'celtic'},
   {value: 'geometric', label: 'geometric'},
@@ -47,60 +48,42 @@ const options = [
 
 
 class Form extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
-      input1Value: '',
-      input2Value: '',
-      input3Value: ''
+      selectedOptions: []
     }
   }
+//this one below works
+  handleChange = ( selectedOptions) => {
+    this.setState({ selectedOptions})
+    // console.log(selectedOptions)
+    this.props.filterArtists(selectedOptions)
+  }
 
-  handleInputChange = (event) => {
-    this.setState({ input1Value: event.target.value}, () => {
-      this.props.filterArtists(this.state.input1Value)
-    })
-    this.setState({input2Value: event.target.value}, () => {
-      this.props.filterArtists(this.state.input2Value)
-    })
-    this.setState({input3Value: event.target.value}, () => {
-      this.props.filterArtists(this.state.input3Value)
-  })
-}
+  
 
-
-  handleSubmit = (event, inputValue1, inputValue2, inputValue3) => {
-    event.preventDefault()
-    this.props.filterArtists(inputValue1, inputValue2, inputValue3)
-    console.log('she clicked')
+  componentDidUpdate = (prevState, prevProps) => {
+    if(this.props.data !== prevProps.data){
+      this.setState({data: this.props.data})
+    }
   }
 
 
   render() {
+    const {selectedOptions} = this.state
     return(
       <div className='form-container'>
         <div className='logo-container'>
           <div className='logo'></div>
         </div>
         <div className='input-container'>
-          <Select 
-            options={options} 
+          <MultiSelect 
             className='selects' 
-            value={this.state.input1Value}
+            options={options} 
+            value={this.state.selectedOptions}
+            onChange={this.handleChange}
             placeholder='Provide some key words'/>
-          <Select 
-            options={options} 
-            className='selects' 
-            value={this.state.input2Value}
-            placeholder='The more provided, the more'/>
-          <Select 
-            options={options} 
-            className='selects' 
-            value={this.state.input3Value}
-            placeholder='Artists we can help you find'/>
-        </div>
-        <div className='form-btn-container'>
-          <button className='form-btn' onClick={(event) => this.handleInputChange(event)}>Lets find you an artist!</button>
         </div>
       </div>
     )

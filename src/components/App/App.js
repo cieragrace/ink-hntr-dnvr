@@ -35,20 +35,22 @@ class App extends Component {
     })
   }
 
-  filterArtists = (inputValue1, inputValue2, inputValue3) => {
-    const filteredArtists = this.state.artists.filter(artist => {
-      if (inputValue1 || inputValue2 || inputValue3) {
-        return (
-          artist.keywords.includes(inputValue1) ||
-          artist.keywords.includes(inputValue2) ||
-          artist.keywords.includes(inputValue3)
-        )
-      } else {
-        return artist
-      }
+  filterArtists = (inputValue) => {
+    const filterInputs = inputValue.filter(input => {
+      const filteredArtists = this.state.artists.filter(artist => {
+        let keywords = artist.keywords.find(keyword => keyword === input.label)
+        if(keywords){
+          return artist
+        } else if (inputValue.length === 0) {
+          return artist
+        }
+      })
+      this.setState({ artists: filteredArtists})
+      return filteredArtists
     })
-    this.setState({ artists: filteredArtists})
+    // console.log('filter inputs', filterInputs)
   }
+
 
   addFavorite = (id) => {
     const artist = this.state.artists.find(artist => artist.id === id)
