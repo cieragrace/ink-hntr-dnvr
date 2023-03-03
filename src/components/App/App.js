@@ -72,9 +72,9 @@ class App extends Component {
       <div className='app-container'>
           <Form filterArtists={this.filterArtists}/>
         <Switch>
-          <Route exact path='/' render={() => <Artists artists={this.state.artists} />}></Route>
-          <Route exact path='/favorites' render={() => <Favorites />}></Route>
-          <Route exact path='/:id' render={({match}) => <ArtistInfo artistid={match.params.id}/>}></Route>
+          <Route exact path='/' render={() => <Artists artists={this.state.artists} />}/>
+          <Route exact path='/favorites' render={() => <Favorites />}/>
+          <Route exact path='/:id' render={({match}) => <ArtistInfo artistid={match.params.id}/>}/>
         </Switch>
       </div>
     )
