@@ -46,22 +46,21 @@ const options = [
   {value: 'cartoon', label:'cartoon'},
 ]
 
-
 class Form extends Component {
   constructor(props) {
     super(props)
     this.state = {
       selectedOptions: []
+    
     }
   }
-//this one below works
-  handleChange = ( selectedOptions) => {
-    this.setState({ selectedOptions})
-    // console.log(selectedOptions)
+// this one below works
+  handleChange = ( selectedOptions ) => {
+    this.setState({ selectedOptions })
+    console.log(selectedOptions)
     this.props.filterArtists(selectedOptions)
   }
 
-  
 
   componentDidUpdate = (prevState, prevProps) => {
     if(this.props.data !== prevProps.data){
@@ -80,7 +79,7 @@ class Form extends Component {
         <div className='input-container'>
           <MultiSelect 
             className='selects' 
-            options={options} 
+            options={options.map((option) => ({key: option.value, value: option.value, label: option.label}))} 
             value={this.state.selectedOptions}
             onChange={this.handleChange}
             placeholder='Provide some key words'/>

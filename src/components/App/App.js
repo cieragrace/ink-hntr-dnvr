@@ -14,7 +14,7 @@ class App extends Component {
       artists: [],
       singleArtist: {},
       favorites: [],
-      selectedOptions: ''
+      selectedOptions: []
     }
   }
 
@@ -50,14 +50,14 @@ class App extends Component {
         if(keywords){
           return artist
         } else if (inputValue.length === 0) {
-          return artist
+          return this.state.artists
         }
       })
       this.setState({ artists: filteredArtists})
       return filteredArtists
     })
-    // console.log('filter inputs', filterInputs)
   }
+
 
 
   addFavorite = (id) => {
@@ -73,8 +73,8 @@ class App extends Component {
           <Form filterArtists={this.filterArtists}/>
         <Switch>
           <Route exact path='/' render={() => <Artists artists={this.state.artists} />}/>
-          <Route exact path='/favorites' render={() => <Favorites />}/>
-          <Route exact path='/:id' render={({match}) => <ArtistInfo artistid={match.params.id}/>}/>
+          <Route exact path='/favorites' render={() => <Favorites favorites={this.state.favorites} />}/>
+          <Route exact path='/:id' render={({match}) => <ArtistInfo artistid={match.params.id} addFavorite={this.addFavorite}/>}/>
         </Switch>
       </div>
     )
