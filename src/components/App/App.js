@@ -13,7 +13,8 @@ class App extends Component {
     this.state = {
       artists: [],
       singleArtist: {},
-      favorites: []
+      favorites: [],
+      selectedOptions: ''
     }
   }
 
@@ -24,10 +25,17 @@ class App extends Component {
   }
 
 
+  componentDidUpdate = (prevState) => {
+    if(prevState.artists !== this.state.artists || prevState.selectedOptions !== this.state.selectedOptions){
+      return this.filterArtists
+    }
+  }
+
   showSingleArtist = (id) => {
     const findArtist = this.state.artists.find(artist => artist.id === id)
     getArtistAPICalls(`artists/${findArtist.id}`)
     .then((data) => {
+      console.log('data', data)
       this.setState({
         singleArtist: data.artist
       })

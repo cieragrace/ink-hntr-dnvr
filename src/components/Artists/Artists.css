@@ -1,13 +1,19 @@
 
+.container {
+  height: 60%;
+}
+
+.link-container {
+  height: 4%;
+}
 .artists-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 50%;
+  grid-template-rows: 1fr;
+  height: 60%;
   width: 100%;
-  border: olive 2px solid;
+  border: 5px #FAB9D3 solid;
   overflow: auto;
-  background-image: url('/src/assets/images/backgroundImages/h-background1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
   gap: 10px;
 }

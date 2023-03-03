@@ -1,8 +1,10 @@
 .form-container {
   display: flex;
   flex-direction: column;
-  height: 45%;
+  justify-content: space-between;
+  height: 40%;
   width: 100%;
+  background-image: url('/src/images/h-background2.png');
 }
 
 .logo-container {
@@ -14,10 +16,13 @@
 
 .logo {
   height: 100%;
-  width: 25%;
-  background-image: url('/src/assets/images/logos/whiteLogo.png');
+  width: 20%;
+  background-image: url('/src/images/whiteLogo.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  border: 5px #FAB9D3 solid;
+  margin-top: 1%;
+  border-radius: 20px;
 }
 
 .input-container {
@@ -31,24 +36,6 @@
   width: 30%;
   height: 30%;
   text-align: center;
-  border: 2px navy solid;
+  border: 5px #FAB9D3 solid;
 }
 
-.form-btn-container {
-  display: flex;
-  justify-content: center;
-  height: 20%;
-  width: 100%;
-}
-
-.form-btn {
-  height: 50%;
-  width: 30%;
-  background-color: #FAB9D3;
-  border: 2px solid olive;
-  border-radius: 25%;
-  color: aliceblue;
-  font-size: x-large;
-  font-weight: bolder;
-
-}

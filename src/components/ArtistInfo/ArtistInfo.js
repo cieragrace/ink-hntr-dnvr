@@ -12,7 +12,7 @@ class ArtistInfo extends Component {
 
   componentDidMount () {
     getArtistAPICalls(`artists/${this.props.artistid}`)
-      .then((data) => {
+      .then(data => {
         this.setState({
         singleArtist: data.artist   
         })
@@ -24,8 +24,8 @@ class ArtistInfo extends Component {
     return(
       <div className='artist-info-container'>
         <div className='artist-images'>
-          <img className='image' src={img} alt='artist-1'></img>
-          {/* <img src={img[1]} alt='artist-2'></img>
+          {/* <img className='image' src={img[0]} alt='artist-1'></img>
+          <img src={img[1]} alt='artist-2'></img>
           <img src={img[2]} alt='artist-3'></img> */}
         </div>
         <div className='artist-details'>

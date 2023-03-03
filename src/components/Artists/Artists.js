@@ -18,15 +18,15 @@ const Artists = (props) => {
   )
 })
   return(
-    <div>
-      <div className='link-container'>
-        <Link to='/'>Back To Home</Link>
-        <Link to='/favorites'>See Favorites</Link>
-      </div>
+    // <div className='container'>
+    //   <div className='link-container'>
+    //     <Link to='/'>Back To Home</Link>
+    //     <Link to='/favorites'>See Favorites</Link>
+    //   </div>
       <div className='artists-container'>
        {artistCards}
       </div>
-    </div>
+    // </div>
   )
 }
 
