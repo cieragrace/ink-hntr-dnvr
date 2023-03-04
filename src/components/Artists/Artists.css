@@ -17,3 +17,15 @@
   background-color: black;
   gap: 10px;
 }
+
+@media screen and (max-width: 968px) {
+  #artists {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 538px) {
+  #artists {
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+}

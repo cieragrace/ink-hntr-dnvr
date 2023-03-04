@@ -54,9 +54,9 @@ class Form extends Component {
   }
 // this one below works
   handleChange = ( selectedOptions ) => {
-    this.setState({ selectedOptions })
+    this.setState({ selectedOptions }, () => this.props.filterArtists(this.state.selectedOptions))
     console.log(selectedOptions)
-    this.props.filterArtists(selectedOptions)
+    // this.props.filterArtists(selectedOptions)
   }
 
 

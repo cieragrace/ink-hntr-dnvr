@@ -23,7 +23,7 @@ const Artists = (props) => {
     //     <Link to='/'>Back To Home</Link>
     //     <Link to='/favorites'>See Favorites</Link>
     //   </div>
-      <div className='artists-container'>
+      <div className='artists-container' id='artists'>
        {artistCards}
       </div>
     // </div>
