@@ -3,6 +3,7 @@ import { Component } from 'react';
 import Artists from '../Artists/Artists';
 import ArtistInfo from '../ArtistInfo/ArtistInfo'
 import Favorites from '../Favorites/Favorites'
+import Header from '../Header/Header'
 import getArtistAPICalls from '../../APICalls';
 import { Route, Switch } from 'react-router-dom'
 import Form from '../Form/Form'
@@ -72,11 +73,28 @@ class App extends Component {
   render() {
     return(
       <div className='app-container'>
-          <Form filterArtists={this.filterArtists}/>
         <Switch>
-          <Route exact path='/' render={() => <Artists artists={this.state.filteredArtists} />}/>
-          <Route exact path='/favorites' render={() => <Favorites favorites={this.state.favorites} />}/>
-          <Route exact path='/:id' render={({match}) => <ArtistInfo artistid={match.params.id} addFavorite={this.addFavorite}/>}/>
+          <Route exact path='/' render={() => (
+          <div className='home-container'>
+            <Form filterArtists={this.filterArtists}/>
+            <Artists artists={this.state.filteredArtists} />
+          </div>
+          )}
+        />
+          <Route exact path='/favorites' render={() => (
+          <div>
+            <Header />
+            <Favorites favorites={this.state.favorites} />
+          </div>
+          )}
+        />
+          <Route exact path='/:id' render={({match}) => (
+          <div className='artist-page-container'>
+            <Header />
+            <ArtistInfo artistid={match.params.id} addFavorite={this.addFavorite}/>
+          </div>
+          )}
+        />
         </Switch>
       </div>
     )
