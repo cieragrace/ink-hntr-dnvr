@@ -14,13 +14,14 @@ class App extends Component {
       artists: [],
       singleArtist: {},
       favorites: [],
-      selectedOptions: []
+      selectedOptions: [],
+      filteredArtists: []
     }
   }
 
   componentDidMount = () => {
     getArtistAPICalls('artists')
-    .then((data) => this.setState({ artists: data.artists }))
+    .then((data) => this.setState({ artists: data.artists, filteredArtists: data.artists }))
     .catch((error) => console.log(error))
   }
 
@@ -44,18 +45,19 @@ class App extends Component {
   }
 
   filterArtists = (inputValue) => {
-    const filterInputs = inputValue.filter(input => {
+    console.log(inputValue)
+    const labels = inputValue.map(input => input.label)
+    if (labels.length === 0) {
+       this.setState({ filteredArtists: this.state.artists})
+    } else {
       const filteredArtists = this.state.artists.filter(artist => {
-        let keywords = artist.keywords.find(keyword => keyword === input.label)
-        if(keywords){
-          return artist
-        } else if (inputValue.length === 0) {
-          return this.state.artists
-        }
+        const keywords = artist.keywords.find(keyword => labels.includes(keyword))
+        return keywords
       })
-      this.setState({ artists: filteredArtists})
-      return filteredArtists
-    })
+      this.setState({ filteredArtists })
+    }
+      // return filteredArtists
+    // })
   }
 
 
@@ -72,7 +74,7 @@ class App extends Component {
       <div className='app-container'>
           <Form filterArtists={this.filterArtists}/>
         <Switch>
-          <Route exact path='/' render={() => <Artists artists={this.state.artists} />}/>
+          <Route exact path='/' render={() => <Artists artists={this.state.filteredArtists} />}/>
           <Route exact path='/favorites' render={() => <Favorites favorites={this.state.favorites} />}/>
           <Route exact path='/:id' render={({match}) => <ArtistInfo artistid={match.params.id} addFavorite={this.addFavorite}/>}/>
         </Switch>
