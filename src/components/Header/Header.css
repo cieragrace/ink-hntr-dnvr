@@ -1,0 +1,29 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+  background-image: url('/src/images/h-background2.png');
+}
+
+.header-logo {
+  background-image: url('/src/images/whiteLogo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px #FAB9D3 solid;
+  border-radius: 20px;
+  width: 20%;
+  height: 90%;
+  background-size: cover;
+
+}
+
+.home-btn {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  background-color: #FAB9D3;
+}
