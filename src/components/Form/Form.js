@@ -2,9 +2,9 @@ import './Form.css'
 import React, { Component } from 'react'
 import Select from 'react-select'
 import { MultiSelect } from "react-multi-select-component"
+import { Link } from 'react-router-dom'
 
 const options = [
-  'watercolor abstract', 
   'traditional', 
   'color realism', 
   'large scale', 
@@ -72,7 +72,7 @@ class Form extends Component {
     return(
       <div className='form-container'>
         <div className='logo-container'>
-          <div className='logo'></div>
+          <Link to='/' className='logo'></Link>
         </div>
         <div className='input-container'>
           <MultiSelect 
