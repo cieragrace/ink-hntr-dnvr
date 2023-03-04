@@ -34,9 +34,15 @@ class ArtistInfo extends Component {
       img ?
       <div className='artist-info-container'>
         <div className='artist-images'>
-          <img className='image' src={img[0]} alt='artist-1'/>
-          <img src={img[1]} alt='artist-2'/>
-          <img src={img[2]} alt='artist-3'/>
+          <div className='artist-image-wrapper'>
+            <img className='image' src={img[0]} alt='artist-1'/>
+          </div>
+          <div className='artist-image-wrapper'>
+            <img src={img[1]} alt='artist-2'/>
+          </div>
+          <div className='artist-image-wrapper'>
+            <img src={img[2]} alt='artist-3'/>
+          </div>
         </div>
         <div className='artist-details'>
           <h1 className='artist-name'>{name}</h1>
