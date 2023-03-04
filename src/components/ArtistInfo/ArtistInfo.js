@@ -33,15 +33,17 @@ class ArtistInfo extends Component {
     return(
       img ?
       <div className='artist-info-container'>
-        <div className='artist-images'>
-          <div className='artist-image-wrapper'>
-            <img className='image' src={img[0]} alt='artist-1'/>
-          </div>
-          <div className='artist-image-wrapper'>
-            <img src={img[1]} alt='artist-2'/>
-          </div>
-          <div className='artist-image-wrapper'>
-            <img src={img[2]} alt='artist-3'/>
+        <div className='left-side'>
+          <div className='artist-images'>
+            <div className='artist-image-wrapper'>
+              <img className='image' src={img[0]} alt='artist-1'/>
+            </div>
+            <div className='artist-image-wrapper'>
+              <img src={img[1]} alt='artist-2'/>
+            </div>
+            <div className='artist-image-wrapper'>
+              <img src={img[2]} alt='artist-3'/>
+            </div>
           </div>
         </div>
         <div className='artist-details'>
@@ -52,9 +54,9 @@ class ArtistInfo extends Component {
             <p className='insta-handle'>{instagram}</p>
           </ul>
           <div className='buttons-container'>
-            <NavLink to={{ pathname: `https://www.instagram.com/${instagram}`}} className={`nav insta-${id}`}>
+            <a href={`https://www.instagram.com/${instagram}`} target="_blank"  rel="noopener noreferrer" className={`nav insta-${id}`}>
               <div className='insta'></div>
-            </NavLink>
+            </a>
             <button className='fave' onClick={(event) => this.handleFaveClick(event)}></button>
           </div>
         </div>
