@@ -1,10 +1,15 @@
 import './ArtistCard.css'
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-const ArtistCard = () => {
+const ArtistCard = (props) => {
   return(
-    //navlink below with 1 image
-    <></>
+    <NavLink to={`/${props.id}`} className='artist-card'>
+      <div className='card-deets'> 
+          <h1>{props.name}</h1>
+          <h3>{props.shop}</h3>
+        </div>
+    </NavLink>
   )
 }
 

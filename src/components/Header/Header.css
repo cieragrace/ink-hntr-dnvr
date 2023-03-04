@@ -1,0 +1,47 @@
+.header-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+  background-image: url('/src/images/h-background2.png');
+}
+
+
+.header-logo {
+  background-image: url('/src/images/whiteLogo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px #FAB9D3 solid;
+  border-radius: 20px;
+  background-size: cover;
+  height: 90%;
+  width: 22%;
+}
+
+.home-btn {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  background-color: #FAB9D3;
+}
+
+/* @media screen and (max-width: 1400px) {
+  .header-logo {
+    width: 27%
+  }
+}
+
+@media screen and (max-width: 1268px) {
+  .header-logo {
+    width: 30%
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .header-logo {
+    width: 40%
+  }
+} */

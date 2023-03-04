@@ -1,0 +1,31 @@
+
+.container {
+  height: 60%;
+}
+
+.link-container {
+  height: 4%;
+}
+.artists-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  height: 60%;
+  width: 100%;
+  border: 5px #FAB9D3 solid;
+  overflow: auto;
+  background-color: black;
+  gap: 10px;
+}
+
+@media screen and (max-width: 968px) {
+  #artists {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 538px) {
+  #artists {
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+}

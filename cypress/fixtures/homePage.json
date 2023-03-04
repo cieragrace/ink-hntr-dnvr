@@ -1,0 +1,95 @@
+{ "artists": [
+  {
+    "name": "Katrina Aldaco",
+    "id": 1,
+    "shop": "Ikonik Ink Tattoo",
+    "keywords": ["water color abstract", "traditional", "color realism"],
+    "img": ["./images/KatrinaAldaco/KatAld1.png", "./images/KatrinaAldaco/KatAld2.png", "./images/KatrinaAldaco/KatAld3.png"],
+    "instagram": "trinatatuaje",
+    "phone": "720-427-2326"
+
+  },
+  {
+    "name": "Billy Crandall",
+    "id": 2,
+    "shop": "Ritual Tattoo",
+    "keywords": ["large scale", "american traditional", "black work"],
+    "img": ["./images/billyCrandall/BilCran1.png", "./images/billyCrandall/BilCran2.png", "./images/billyCrandall/BilCran3.png"],
+    "instagram": "williamroycrandall2",
+    "phone": "303-455-1558"
+  },
+  {
+    "name": "Jason Lukach",
+    "id": 3,
+    "shop": "Think Tank Tattoo",
+    "keywords": ["nature inspired", "celtic", "geometric"],
+    "img": ["./images/jasonLukach/JasLuk1.png", "./images/jasonLukach/JasLuk2.png", "./images/jasonLukach/JasLuk3.png"],
+    "instagram": "jason_lukach_tattooer",
+    "phone": "720-932-0124"
+  },
+  {
+    "name": "Dianne Chavez",
+    "id": 4,
+    "shop": "Ikonik Ink Tattoo",
+    "keywords": ["black and grey", "fine lines", "black work", "dot work"],
+    "img": ["./images/DianneChavez/DiaCha1.png", "./images/DianneChavez/DiaCha2.png", "./images/DianneChavez/DiaCha3.png"],
+    "instagram": "vexit.ink", 
+    "phone": "720-427-2326" 
+  },
+  {
+    "name": "Haley McMahon",
+    "id": 5,
+    "shop": "Dedication Tattoo",
+    "keywords": ["lettering", "traditional", "black and grey"],
+    "img": ["./images/haleyMacMahon/HalMac1.png", "./images/haleyMacMahon/HalMac2.png", "./images/haleyMacMahon/HalMac3.png"],
+    "instagram": "haleymctattoos",
+    "phone": "303-733-0315"
+  },
+  {
+    "name": "Sam Yamini",
+    "id": 6,
+    "shop": "Dedication Tattoo",
+    "keywords": ["japanese", "irezumi", "horimono"],
+    "img": [],
+    "instagram":"therealsamyamini", 
+    "phone": "303-733-0315"
+  },
+  {
+    "name": "Rachel Paton",
+    "id": 7,
+    "shop": "Ritual Tattoo",
+    "keywords": ["machine free", "stick and poke", "fine lines" ],
+    "img": ["./images/RachelPatton/RacPat1.png", "./images/RachelPatton/RacPat2.png", "./images/RachelPatton/RacPat3.png"],
+    "instagram": "ray_lyn_tattoos",
+    "phone": "303-455-1558"
+
+  },
+  {
+    "name": "DJ Chilcote Jr",
+    "id": 8,
+    "shop": "Think Tank Tattoo",
+    "keywords": ["bold", "modern", "traditional"],
+    "img": ["./images/djChilcoteJr/DjChi1.png", "./images/djChilcoteJr/DjChi2.png", "./images/djChilcoteJr/DjChi3.png"],
+    "instagram": "chilcoterjr_tattoo",
+    "phone": "720-932-0124"
+  },
+  {
+    "name": "Sara Lewis",
+    "id": 9,
+    "shop": "All sacred Tattoo",
+    "keywords": ["bold", "dark", "horror" ],
+    "img": ["./images/saraLewis/SarLew1.png", "./images/saraLewis/SarLew2.png", "./images/saraLewis/SarLew3.png"],
+    "instagram": "saralewistattoo",
+    "phone": "303-862-9172"
+  },
+  {
+    "name": "Kevin Bledsoe",
+    "id": 10,
+    "shop": "Think Tank Tattoo",
+    "keywords":["neo traditional", "japanese", "illustrative"],
+    "img": ["./images/kevinBledsoe/KevBle1.png", "./images/kevinBledsoe/KevBle2.png", "./images/kevinBledsoe/KevBle3.png"],
+    "instagram": "kevinbledsoeart",
+    "phone": "720-932-0124"
+  }
+]
+}
