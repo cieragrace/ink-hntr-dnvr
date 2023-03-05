@@ -7,7 +7,11 @@ Living in Denver, I am well aware of the talent in the tattoo scene. Whether som
 I completed this app in 5 days. I had never written an API before, but for this project I did self study and succeed in building and implementing my own BE. I did set up responsiveness to ensure the app is accessable and easy to use on a tablet, phone or computer. 
 
 ### Deployment Site
-https://ink-hntr-dnvr.herokuapp.com/
+1. Go to [API repo] (https://github.com/cieragrace/ink-hntr-api)
+2. Click on code and copy SSH key
+3. In terminal in desired directory git clone + ssh key
+4. CD into the api directory and npm start and you have access to the API
+5. Then open site at https://ink-hntr-dnvr.herokuapp.com/
 
 ### Preview of the App
 
