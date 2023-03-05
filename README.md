@@ -11,6 +11,8 @@ https://ink-hntr-dnvr.herokuapp.com/
 
 ### Preview of the App
 
+<img width="1085" alt="InkPreview" src="https://user-images.githubusercontent.com/113853138/222972953-0ff6e7d7-5963-4f78-a28d-49cfbabfbec2.png">
+
 ### Installation Instructions
 1. Go to [this repo] ('https://github.com/cieragrace/ink-hntr-dnvr') on Github
 2. Click "Fork", then 'Create New Fork'
@@ -57,11 +59,11 @@ https://ink-hntr-dnvr.herokuapp.com/
 5. Beef up the data base, 30 artists was just for this MVP
 
 ### Wins and Challenges
-Wins
+####Wins
 1. Scraping data and building my own API and seeing the data come through the browser and in Postman was so satisfying
 2. In 5 days I feel like I was able to get 80% of my vision to come to life
 3. One of the firs people I walked through my app actually used it and saved an artists data, I already have had a user
-Challenges
+####Challenges
 1. Hit a major time blocker pulling images from the BE data base due to saving img paths over URLs
 2. Did not get all of the functionality I had planned in the 5 days
 3. Not getting progile images to work was a big miss on my project. Did not plan out the API deep enough for that and they will not pull from the current images.
