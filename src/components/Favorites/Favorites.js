@@ -1,6 +1,7 @@
 import './Favorites.css'
 import React from 'react'
 import ArtistCard from '../ArtistCard/ArtistCard'
+import PropTypes from 'prop-types'
 
 const Favorites = (props) => {
   const favoriteCards = this.props.favorites.map(fave => {
@@ -29,3 +30,12 @@ const Favorites = (props) => {
 }
 
 export default Favorites
+
+Favorites.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  shop: PropTypes.string,
+  img: PropTypes.array,
+  keywords: PropTypes.array,
+  phone: PropTypes.string
+}
