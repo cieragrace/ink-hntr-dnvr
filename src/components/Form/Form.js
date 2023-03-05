@@ -60,9 +60,14 @@ class Form extends Component {
   }
 
 
-  componentDidUpdate = (prevState, prevProps) => {
-    if(this.props.data !== prevProps.data){
-      this.setState({data: this.props.data})
+  // componentDidUpdate = (prevState, prevProps) => {
+  //   if(this.props.data !== prevProps.data){
+  //     this.setState({data: this.props.data})
+  //   }
+  // }
+  componentDidUpdate = (prevState) => {
+    if(prevState.selectedOptions !== this.state.selectedOptions){
+      return this.filterArtists
     }
   }
 
