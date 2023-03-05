@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Abstract - what I did
+Living in Denver, I am well aware of the talent in the tattoo scene. Whether someone is new to Denver, trying to fins a new artist, or getting their very first tattoo; finding an artist can seem overwhelming. Even suggesting one to someone can be overehelming. In the app a user can use keywords to sort through top tier artists in the Denver area. All artists work out of shops with over 4.5 star google ratings. A user can also click on an artist name to see their shop info, link to their instagram and view a small collection of their work directly on the site. 
 
-## Available Scripts
+### Context:
+I completed this app in 5 days. I had never written an API before, but for this project I did self study and succeed in building and implementing my own BE. I did set up responsiveness to ensure the app is accessable and easy to use on a tablet, phone or computer. 
 
-In the project directory, you can run:
+### Deployment Site
+https://ink-hntr-dnvr.herokuapp.com/
 
-### `npm start`
+### Preview of the App
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation Instructions
+1. Go to [this repo] ('https://github.com/cieragrace/ink-hntr-dnvr') on Github
+2. Click "Fork", then 'Create New Fork'
+3. Click 'Code' and copy the SSH url provided by Github
+4. In your terminal, navigate to the new project repository
+5. Go into desired parent folder and type 'git clone' and paste the ssh url you copied
+6. Cd into the repo directory and open in text editor
+7. In terminal when in correct repo run 'npm install', 'npm start', then go to "http://localhost:3000/" in your browser
+8. You will also need to clone down the API server. Go to [API repo] (https://github.com/cieragrace/ink-hntr-api) 
+9. Clone into project directory, do not nest
+10. Once cloned, npm install and then npm start and you will be able to access the data set
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Contributors
+ [![Ciera][Ciera-badge]][Ciera-url]
 
-### `npm test`
+ ### Learning Goals:
+-Gain competency with React fundamentals
+-Learn how to test React components & asynchronous JS
+-Practice refactoring
+-Create a multi-page UX using Router
+-Self teach and implement express.js BE
+-Implementing PropTypes
+-Clean and clear error handling
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Technologies Used:
+-JavaScript
+-React.js
+-CSS
+-GitHub
+-GitHub projects
+-Cypress
+-Router
+-Express
+-HTML
+-PropTypes
+-Heroku
+-Postman
