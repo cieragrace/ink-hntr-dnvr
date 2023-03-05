@@ -80,9 +80,8 @@ class App extends Component {
           </div>
           )}
         />
-          <Route path='*'>
-            {/* <ErrorPage /> */}
-            <h1>HELLLLLLO</h1>
+          <Route path='*' to='/error'>
+            <ErrorPage />
             </Route>
         </Switch>
       </div>
