@@ -48,3 +48,20 @@ https://ink-hntr-dnvr.herokuapp.com/
 -PropTypes
 -Heroku
 -Postman
+
+### Future Features
+1. Add favoriting feature. Favorite button on artist page that will add artist card to favorites component
+2. Update API to have profile photo for home page artist cards 
+3. Update API to have shop address
+4. Use google maps react API to link to shop address, create Links on address to take to map view
+5. Beef up the data base, 30 artists was just for this MVP
+
+### Wins and Challenges
+Wins
+1. Scraping data and building my own API and seeing the data come through the browser and in Postman was so satisfying
+2. In 5 days I feel like I was able to get 80% of my vision to come to life
+3. One of the firs people I walked through my app actually used it and saved an artists data, I already have had a user
+Challenges
+1. Hit a major time blocker pulling images from the BE data base due to saving img paths over URLs
+2. Did not get all of the functionality I had planned in the 5 days
+3. Not getting progile images to work was a big miss on my project. Did not plan out the API deep enough for that and they will not pull from the current images.
