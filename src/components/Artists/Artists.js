@@ -2,6 +2,7 @@ import './Artists.css'
 import React from 'react'
 import ArtistCard from '../ArtistCard/ArtistCard'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const Artists = (props) => {
   const artistCards = props.artists.map(artist => {
@@ -31,3 +32,12 @@ const Artists = (props) => {
 }
 
 export default Artists
+
+Artists.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  shop: PropTypes.string,
+  img: PropTypes.array,
+  keywords: PropTypes.array,
+  phone: PropTypes.string
+}

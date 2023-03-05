@@ -73,6 +73,6 @@ ArtistInfo.propTypes = {
   id: PropTypes.number,
   shop: PropTypes.string,
   phone: PropTypes.string,
-  img: PropTypes.string,
+  img: PropTypes.array,
   instagram: PropTypes.string
 }
