@@ -80,12 +80,10 @@ class App extends Component {
           </div>
           )}
         />
-          <Route exact path='*' render={() => (
-          <div className='error-page-container'>
-            <ErrorPage />
-          </div>
-         )}
-         />
+          <Route path='*'>
+            {/* <ErrorPage /> */}
+            <h1>HELLLLLLO</h1>
+            </Route>
         </Switch>
       </div>
     )

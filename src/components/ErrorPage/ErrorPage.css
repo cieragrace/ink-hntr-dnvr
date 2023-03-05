@@ -1,0 +1,22 @@
+.error-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #FAB9D3;
+}
+
+.oh-no {
+  font-size: 60px;
+  color: black;
+}
+
+.redirect {
+  font-size: 40px
+}
+
+.home-btn {
+  font-size: 30px;
+}

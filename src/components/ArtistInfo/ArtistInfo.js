@@ -3,6 +3,7 @@ import getArtistAPICalls from '../../APICalls'
 import React, { Component } from 'react'
 import { NavLink } from "react-router-dom"
 import PropTypes from 'prop-types'
+import ErrorPage from '../ErrorPage/ErrorPage'
 
 class ArtistInfo extends Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class ArtistInfo extends Component {
   render() {
     const { name, id, shop, phone, img, instagram } = this.state.singleArtist
     return(
-      img ?
+      name ?
       <div className='artist-info-container'>
         <div className='left-side'>
           <div className='artist-images'>
@@ -53,7 +54,7 @@ class ArtistInfo extends Component {
             </a>
           </div>
         </div>
-      </div> : <h3>Loading</h3>
+      </div> : <ErrorPage />
     )
   }
 }

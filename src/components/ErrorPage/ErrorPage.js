@@ -5,9 +5,8 @@ import { Link } from 'react-router-dom'
 const ErrorPage = () => {
   return(
     <div className="error-container">
-      <h1>Oh no, it looks like there has been an issue</h1>
-      <h3> To be redirected back to home click Below</h3>
-      <Link to='/'>Back To Home</Link>
+      <h1 className="oh-no">404 Page Not Found</h1>
+      <h3 className='redirect'> To be redirected back to home click logo above</h3>
     </div>
   )
 }
