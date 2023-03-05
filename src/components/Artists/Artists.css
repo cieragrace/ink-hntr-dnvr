@@ -15,7 +15,7 @@
   border: 5px #FAB9D3 solid;
   overflow: auto;
   background-color: black;
-  gap: 10px;
+  gap: 20px;
 }
 
 @media screen and (max-width: 968px) {

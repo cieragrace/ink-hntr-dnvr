@@ -7,8 +7,9 @@ const ArtistCard = (props) => {
   return(
     <NavLink to={`/${props.id}`} className={`artist-card ${props.id}`}>
       <div className='card-deets'> 
-          <h1>{props.name}</h1>
-          <h3>{props.shop}</h3>
+          <h1 className='h1'>{props.name}</h1>
+          <h3 className='h3'>{props.shop}</h3>
+          <img className="img" src={`${props.img[2]}`}></img>
         </div>
     </NavLink>
   )

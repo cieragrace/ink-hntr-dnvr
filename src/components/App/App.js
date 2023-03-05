@@ -91,9 +91,9 @@ class App extends Component {
 
 export default App;
 
-App.propTypes = {
-  componentDidMount: PropTypes.func.isRequired,
-  componentDidUpdate: PropTypes.func.isRequired,
-  showSingleArtist: PropTypes.func.isRequired,
-  filterArtists: PropTypes.func.isRequired,
-}
+// App.propTypes = {
+//   componentDidMount: PropTypes.func.isRequired,
+//   componentDidUpdate: PropTypes.func.isRequired,
+//   showSingleArtist: PropTypes.func.isRequired,
+//   filterArtists: PropTypes.func.isRequired,
+// }

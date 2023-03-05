@@ -68,6 +68,6 @@ ArtistInfo.propTypes = {
   phone: PropTypes.string,
   img: PropTypes.array,
   instagram: PropTypes.string,
-  componentDidMount: PropTypes.func.isRequired,
-  handleFaveClick: PropTypes.func.isRequired
+  // componentDidMount: PropTypes.func.isRequired,
+  // handleFaveClick: PropTypes.func.isRequired
 }

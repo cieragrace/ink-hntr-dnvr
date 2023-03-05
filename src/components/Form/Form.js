@@ -95,7 +95,7 @@ class Form extends Component {
 
 export default Form 
 
-Form.propTypes = {
-  handleChange: PropTypes.func.isRequired,
-  componentDidUpdate: PropTypes.func.isRequired
-}
+// Form.propTypes = {
+//   handleChange: PropTypes.func.isRequired,
+//   componentDidUpdate: PropTypes.func.isRequired
+// }
