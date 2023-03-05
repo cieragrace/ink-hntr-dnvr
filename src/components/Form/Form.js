@@ -53,19 +53,11 @@ class Form extends Component {
     
     }
   }
-// this one below works
+
   handleChange = ( selectedOptions ) => {
     this.setState({ selectedOptions }, () => this.props.filterArtists(this.state.selectedOptions))
-    console.log(selectedOptions)
-    // this.props.filterArtists(selectedOptions)
   }
 
-
-  // componentDidUpdate = (prevState, prevProps) => {
-  //   if(this.props.data !== prevProps.data){
-  //     this.setState({data: this.props.data})
-  //   }
-  // }
   componentDidUpdate = (prevState) => {
     if(prevState.selectedOptions !== this.state.selectedOptions){
       return this.filterArtists
@@ -94,8 +86,3 @@ class Form extends Component {
 }
 
 export default Form 
-
-Form.propTypes = {
-  handleChange: PropTypes.func.isRequired,
-  componentDidUpdate: PropTypes.func.isRequired
-}

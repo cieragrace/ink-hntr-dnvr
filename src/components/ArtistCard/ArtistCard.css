@@ -1,17 +1,28 @@
 .artist-card {
-  border: 3px solid black;
+  border: 5px solid #FAB9D3;
   border-radius: 10px;
   width: 90%;
   height: 100%;
-  /* min-height: 450px; */
-  margin: 20px;
   text-align: center;
-  background-image: url('/src/images/pinkbackground.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  text-decoration: none;
-  color: black;
+  object-fit: contain;
   justify-content: space-between;
+  margin: 20px;
+}
+
+.card-deets {
+width: 100%;
+height: 100%;
+background-color: black;
+color: white;
+}
+
+.img {
+  height: 82%;
+  width:100%;
+}
+
+.h1, .h3 {
+  text-decoration: none;
 }
 
 
