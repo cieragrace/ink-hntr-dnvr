@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 
 const ArtistCard = (props) => {
   return(
-    <NavLink to={`/${props.id}`} className='artist-card'>
+    <NavLink to={`/${props.id}`} className={`artist-card ${props.id}`}>
       <div className='card-deets'> 
           <h1>{props.name}</h1>
           <h3>{props.shop}</h3>
