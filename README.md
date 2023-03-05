@@ -15,7 +15,8 @@ I completed this app in 5 days. I had never written an API before, but for this 
 
 ### Preview of the App
 
-<img width="1085" alt="InkPreview" src="https://user-images.githubusercontent.com/113853138/222972953-0ff6e7d7-5963-4f78-a28d-49cfbabfbec2.png">
+![Preview](https://user-images.githubusercontent.com/113853138/222991761-f8a9eeec-c4ba-4956-b7df-76cfd4ee8439.png)
+
 
 ### Installation Instructions
 1. Go to [this repo] ('https://github.com/cieragrace/ink-hntr-dnvr') on Github
