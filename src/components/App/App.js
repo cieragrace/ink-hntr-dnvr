@@ -7,6 +7,7 @@ import Header from '../Header/Header'
 import getArtistAPICalls from '../../APICalls';
 import { Route, Switch } from 'react-router-dom'
 import Form from '../Form/Form'
+import PropTypes from 'prop-types'
 
 class App extends Component {
   constructor() {
@@ -102,3 +103,11 @@ class App extends Component {
 }
 
 export default App;
+
+App.propTypes = {
+  componentDidMount: PropTypes.func.isRequired,
+  componentDidUpdate: PropTypes.func.isRequired,
+  showSingleArtist: PropTypes.func.isRequired,
+  filterArtists: PropTypes.func.isRequired,
+  addFavorite: PropTypes.func.isRequired
+}
