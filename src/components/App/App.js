@@ -2,6 +2,7 @@ import './App.css';
 import { Component } from 'react';
 import Artists from '../Artists/Artists';
 import ArtistInfo from '../ArtistInfo/ArtistInfo'
+import ErrorPage from '../ErrorPage/ErrorPage';
 import Header from '../Header/Header'
 import getArtistAPICalls from '../../APICalls';
 import { Route, Switch } from 'react-router-dom'
@@ -79,6 +80,12 @@ class App extends Component {
           </div>
           )}
         />
+          <Route exact path='*' render={() => (
+          <div className='error-page-container'>
+            <ErrorPage />
+          </div>
+         )}
+         />
         </Switch>
       </div>
     )
