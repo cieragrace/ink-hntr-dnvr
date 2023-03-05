@@ -8,8 +8,7 @@ class ArtistInfo extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      singleArtist: {}, 
-      favorites: []
+      singleArtist: {}
     }
   }
 
@@ -23,14 +22,8 @@ class ArtistInfo extends Component {
       })        
   }
 
-  handleFaveClick = (event) => {
-    event.preventDefault()
-    this.props.addFavorite()
-    console.log(this.props.favorites)
-  }
-
   render() {
-    const { name, id, shop, phone, img, instagram, addFavorite } = this.state.singleArtist
+    const { name, id, shop, phone, img, instagram } = this.state.singleArtist
     return(
       img ?
       <div className='artist-info-container'>
@@ -58,7 +51,6 @@ class ArtistInfo extends Component {
             <a href={`https://www.instagram.com/${instagram}`} target="_blank"  rel="noopener noreferrer" className={`nav insta-${id}`}>
               <div className='insta'></div>
             </a>
-            <button className='fave' onClick={(event) => this.handleFaveClick(event)}></button>
           </div>
         </div>
       </div> : <h3>Loading</h3>

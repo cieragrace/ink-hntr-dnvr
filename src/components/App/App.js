@@ -2,7 +2,6 @@ import './App.css';
 import { Component } from 'react';
 import Artists from '../Artists/Artists';
 import ArtistInfo from '../ArtistInfo/ArtistInfo'
-import Favorites from '../Favorites/Favorites'
 import Header from '../Header/Header'
 import getArtistAPICalls from '../../APICalls';
 import { Route, Switch } from 'react-router-dom'
@@ -15,7 +14,6 @@ class App extends Component {
     this.state = {
       artists: [],
       singleArtist: {},
-      favorites: [],
       selectedOptions: [],
       filteredArtists: []
     }
@@ -63,14 +61,6 @@ class App extends Component {
   }
 
 
-
-  addFavorite = (id) => {
-    const artist = this.state.artists.find(artist => artist.id === id)
-    if (artist && !this.state.favorites.includes(artist)) {
-      this.setState({ favorites: [...this.state.favorites, artist] });
-    }
-  };
-
   render() {
     return(
       <div className='app-container'>
@@ -82,17 +72,10 @@ class App extends Component {
           </div>
           )}
         />
-          <Route exact path='/favorites' render={() => (
-          <div>
-            <Header />
-            <Favorites favorites={this.state.favorites} />
-          </div>
-          )}
-        />
           <Route exact path='/:id' render={({match}) => (
           <div className='artist-page-container'>
             <Header />
-            <ArtistInfo artistid={match.params.id} addFavorite={this.addFavorite}/>
+            <ArtistInfo artistid={match.params.id} />
           </div>
           )}
         />
@@ -109,5 +92,4 @@ App.propTypes = {
   componentDidUpdate: PropTypes.func.isRequired,
   showSingleArtist: PropTypes.func.isRequired,
   filterArtists: PropTypes.func.isRequired,
-  addFavorite: PropTypes.func.isRequired
 }
