@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import Select from 'react-select'
 import { MultiSelect } from "react-multi-select-component"
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const options = [
   'traditional', 
@@ -93,3 +94,8 @@ class Form extends Component {
 }
 
 export default Form 
+
+Form.propTypes = {
+  handleChange: PropTypes.func.isRequired,
+  componentDidUpdate: PropTypes.func.isRequired
+}
