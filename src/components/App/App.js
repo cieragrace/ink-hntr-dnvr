@@ -41,7 +41,7 @@ class App extends Component {
       this.setState({
         singleArtist: data.artist
       })
-      console.log("fetch only 1", data)
+      .catch((error) => console.log(error))
     })
   }
 
