@@ -2,6 +2,7 @@ import './ArtistInfo.css'
 import getArtistAPICalls from '../../APICalls'
 import React, { Component } from 'react'
 import { NavLink } from "react-router-dom"
+import PropTypes from 'prop-types'
 
 class ArtistInfo extends Component {
   constructor(props) {
@@ -66,3 +67,12 @@ class ArtistInfo extends Component {
 }
 
 export default ArtistInfo
+
+ArtistInfo.propTypes = {
+  name: PropTypes.string,
+  id: PropTypes.number,
+  shop: PropTypes.string,
+  phone: PropTypes.string,
+  img: PropTypes.string,
+  instagram: PropTypes.string
+}
