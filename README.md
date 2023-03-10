@@ -4,7 +4,7 @@
 As a resident of Denver, I am well aware of the abundance of talent in the local tattoo scene. Whether you're new to the city, searching for a new artist, or getting your first tattoo, the process of finding the right artist can feel overwhelming. Even recommending an artist to someone can be daunting. That's where our app comes in. Using keywords, users can sort through top-tier tattoo artists in the Denver area, all of whom work at shops with over 4.5 star Google ratings. Users can click on an artist's name to access their shop information, Instagram link, and a small collection of their work directly on the site.
 
 ### Context:
-Successfully developed and deployed a fully functional application in just five days, including the implementation of a custom backend API. Achieved this despite having no prior experience with API development, through self-study and dedication to learning. Ensured an excellent user experience by creating a responsive design that works seamlessly on multiple devices, including tablets, phones, and computers.
+This was a solo project where I successfully developed and deployed a fully functional application in just five days, including the implementation of a custom backend API. Achieved this despite having no prior experience with API development, through self-study and dedication to learning. Ensured an excellent user experience by creating a responsive design that works seamlessly on multiple devices, including tablets, phones, and computers.
 
 ### Deployment Site
 1. Go to [API repo] (https://github.com/cieragrace/ink-hntr-api)
@@ -30,8 +30,6 @@ Successfully developed and deployed a fully functional application in just five 
 9. Clone into project directory, do not nest
 10. Once cloned, npm install and then npm start and you will be able to access the data set
 
-## Contributors
- [![Ciera][Ciera-badge]][Ciera-url]
 
  ### Learning Goals:
 -Gain competency with React fundamentals
