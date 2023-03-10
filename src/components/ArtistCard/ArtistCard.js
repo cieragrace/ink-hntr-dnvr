@@ -9,7 +9,7 @@ const ArtistCard = (props) => {
       <div className='card-deets'> 
           <h1 className='h1'>{props.name}</h1>
           <h3 className='h3'>{props.shop}</h3>
-          <img className="img" src={`${props.img[2]}`}></img>
+          <img className="img" src={`${props.img[0]}`}></img>
         </div>
     </NavLink>
   )
