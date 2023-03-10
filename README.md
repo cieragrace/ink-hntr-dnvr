@@ -1,15 +1,15 @@
 <a name="readme-top"></a>
 
 ### Abstract - what I did
-Living in Denver, I am well aware of the talent in the tattoo scene. Whether someone is new to Denver, trying to fins a new artist, or getting their very first tattoo; finding an artist can seem overwhelming. Even suggesting one to someone can be overehelming. In the app a user can use keywords to sort through top tier artists in the Denver area. All artists work out of shops with over 4.5 star google ratings. A user can also click on an artist name to see their shop info, link to their instagram and view a small collection of their work directly on the site. 
+As a resident of Denver, I am well aware of the abundance of talent in the local tattoo scene. Whether you're new to the city, searching for a new artist, or getting your first tattoo, the process of finding the right artist can feel overwhelming. Even recommending an artist to someone can be daunting. That's where our app comes in. Using keywords, users can sort through top-tier tattoo artists in the Denver area, all of whom work at shops with over 4.5 star Google ratings. Users can click on an artist's name to access their shop information, Instagram link, and a small collection of their work directly on the site.
 
 ### Context:
-I completed this app in 5 days. I had never written an API before, but for this project I did self study and succeed in building and implementing my own BE. I did set up responsiveness to ensure the app is accessable and easy to use on a tablet, phone or computer. 
+Successfully developed and deployed a fully functional application in just five days, including the implementation of a custom backend API. Achieved this despite having no prior experience with API development, through self-study and dedication to learning. Ensured an excellent user experience by creating a responsive design that works seamlessly on multiple devices, including tablets, phones, and computers.
 
 ### Deployment Site
 1. Go to [API repo] (https://github.com/cieragrace/ink-hntr-api)
-2. Click on code and copy SSH key
-3. In terminal in desired directory git clone + ssh key
+2. Click on 'code' and copy SSH key
+3. In terminal go to desired directory and run git clone + ssh key
 4. CD into the api directory and npm start and you have access to the API
 5. Then open site at https://ink-hntr-dnvr.herokuapp.com/
 
